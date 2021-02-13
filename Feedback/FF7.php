@@ -99,6 +99,9 @@ else
                         <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                             <div class="row form-group">                                      
                                 <?php 
+                                $d = date("n");
+                                $d .= '/';
+                                $d .= date("Y");
                                 $sql="select * from student_table2 where std_id=$feedid";
                                 $result = mysqli_query($con,$sql);
                                 $row = mysqli_fetch_array($result);
@@ -189,20 +192,23 @@ else
                                             </center></td></tr>
                                             <?php
                                             if(isset($_POST['Submit'])){
-                                                $sql2 = "select * from tfeedback";
-                                                $result2 = mysqli_query($feeddbc,$sql2);
-                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,division,teacher_id,subject_no) VALUES('$feedid','$t11','$di','$s1')");
-                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,division,teacher_id,subject_no) VALUES('$feedid','$t12','$di','$s1')");
+                                                
+                                                if ($t11!=''){
+                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester,dates) VALUES('$feedid','$t11','$s1','$di','$se','$d')");
+                                                }
+                                                if ($t12!=''){
+                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester,dates) VALUES('$feedid','$t12','$s1','$di','$se','$d')");
+                                                }
                                                 $comment=$_POST["comment"];
-                                                $r=mysqli_query($feeddbc,"UPDATE tfeedback set comment='$comment' where subject_no='$s1' AND std_id='$feedid' AND division='$div' AND semester='$se'");
+                                                $r=mysqli_query($feeddbc,"UPDATE tfeedback set comment='$comment' where subject_no='$s1' AND std_id='$feedid' AND division='$di' AND semester='$se'");
                                                 for ($j = 1; $j <11; $j++) {
                                                     if(isset($_POST['Q' . $j])){
-                                                        $a = $_POST['Q' . $j];   
-                                                        $r=mysqli_query($feeddbc,"UPDATE tfeedback set Q$j='$a' where teacher_id='$t11' AND subject_no='$s1' AND std_id='$feedid'");
+                                                        $a = $_POST['Q' . $j];
+                                                        $r=mysqli_query($feeddbc,"UPDATE tfeedback set Q$j='$a' where teacher_id='$t11' AND subject_no='$s1' AND std_id='$feedid' AND division='$di' AND semester='$se'");
                                                     }
                                                     if(isset($_POST['R' . $j])){
                                                         $b = $_POST['R' . $j]; 
-                                                        $r=mysqli_query($feeddbc,"UPDATE tfeedback set Q$j='$b' where teacher_id='$t12' AND subject_no='$s1' AND std_id='$feedid'");
+                                                        $r=mysqli_query($feeddbc,"UPDATE tfeedback set Q$j='$b' where teacher_id='$t12' AND subject_no='$s1' AND std_id='$feedid' AND division='$di' AND semester='$se'");
                                                     }
                                                 }
                                             }?>

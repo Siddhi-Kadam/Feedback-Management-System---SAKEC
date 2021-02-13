@@ -93,6 +93,9 @@ else
                         <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                             <div class="row form-group">                                      
                                 <?php
+                                    $d = date("n");
+                                    $d .= '/';
+                                    $d .= date("Y");
                                     $sql="select * from student_table2 where std_id='$feedid'";
                                     $result = mysqli_query($con,$sql);
                                     $row = mysqli_fetch_array($result);
@@ -176,8 +179,9 @@ else
                                             </center></td></tr>
                                             <?php   
                                             if(isset($_POST['Submit'])){
-                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no) VALUES('$feedid','$t11','$s1')");
-                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no) VALUES('$feedid','$t12','$s1')");
+                                                
+                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,dates) VALUES('$feedid','$t11','$s1','$d')");
+                                                $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,dates) VALUES('$feedid','$t12','$s1','$d')");
                                                 $comment=$_POST["comment"];
                                                 $r=mysqli_query($feeddbc,"UPDATE tfeedback set comment='$comment' where subject_no='$s1' AND std_id='$feedid' AND division='$div' AND semester='$se'");
                                                 for ($j = 1; $j <11; $j++) {

@@ -91,6 +91,9 @@ else
                 <center>
                     <div class="card-body card-block">
                     <?php
+                        $d = date("n");
+                        $d .= '/';
+                        $d .= date("Y");
                         $sql="select * from student_table2 where std_id='$feedid'";
                         $result = mysqli_query($con,$sql);
                         $row = mysqli_fetch_array($result);
@@ -163,7 +166,8 @@ else
                                                 </center></td></tr>
                                         <?php if(isset($_POST['Submit']))
                                         {
-                                            $r=mysqli_query($feeddbc,"INSERT INTO pfeedback(std_id,batch,division,teacher_id,subject_no) VALUES('$feedid','$ba','$di','$t1','$s1')");
+                                            
+                                            $r=mysqli_query($feeddbc,"INSERT INTO pfeedback(std_id,batch,division,teacher_id,subject_no,dates) VALUES('$feedid','$ba','$di','$t1','$s1','$d')");
                                             $comment=$_POST["comment"];
                                             $r=mysqli_query($feeddbc,"UPDATE pfeedback set comment='$comment' where subject_no='$s1' AND std_id='$feedid' AND division='$di'");
                                             for ($j = 1; $j <=5; $j++) {

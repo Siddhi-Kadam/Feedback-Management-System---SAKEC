@@ -91,6 +91,10 @@ else
                 <center>
                     <div class="card-body card-block">
                     <?php 
+                    $d = date("n");
+                    $d .= '/';
+                    $d .= date("Y");
+                    
                         $sql="select * from student_table2 where std_id='$feedid'";
                         $result = mysqli_query($con,$sql);
                         $row123 = mysqli_fetch_array($result);
@@ -197,14 +201,15 @@ else
                                     </table>
                                     <?php
                                     if(isset($_POST['Submit'])){
+                                        
                                         if ($t11!=''){
-                                        $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester) VALUES('$feedid','$t11','$s1','$div','$se')");
+                                        $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester,dates) VALUES('$feedid','$t11','$s1','$div','$se','$d')");
                                         }
                                         if ($t12!=''){
-                                        $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester) VALUES('$feedid','$t12','$s1','$div','$se')");
+                                        $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester,dates) VALUES('$feedid','$t12','$s1','$div','$se','$d')");
                                         }
                                         if ($t13!=''){
-                                        $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester) VALUES('$feedid','$t13','$s1','$div','$se')");
+                                        $r=mysqli_query($feeddbc,"INSERT INTO tfeedback(std_id,teacher_id,subject_no,division,semester,dates) VALUES('$feedid','$t13','$s1','$div','$se','$d')");
                                         }
                                         $comment=$_POST["comment"];
                                         $r=mysqli_query($feeddbc,"UPDATE tfeedback set comment='$comment' where subject_no='$s1' AND std_id='$feedid' AND division='$div' AND semester='$se'");

@@ -117,7 +117,7 @@ else{
                 <center>
                     <div class="card-body card-block">
                         <form method="post" enctype="multipart/form-data" class="form-horizontal">
-                            <?php for(i=0;i<nococa;i++){?>
+                            <?php for($i=0;$i<$nococa;$i++){?>
                             <div class="row form-group">
                                 <div class="col col-md-3">
                                     <label for="text-input" class=" form-control-label">Import Certificate (Image name = Student's Name + Events Name / file format = jpeg, jpg, png)</label><br>

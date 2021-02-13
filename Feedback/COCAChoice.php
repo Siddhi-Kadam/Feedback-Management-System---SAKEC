@@ -72,9 +72,10 @@ th{
                                             <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
                                                 <p style="font-size:16px; color:red" align="center"> <?php if($msg){echo $msg;}  ?> </p>
                                                 <div class="row form-group">
-                                                    <div class="col col-md-3">
+                                                    <!-- <div class="col col-md-3">
                                                          <label for="text-input" class=" form-control-label">Import excel data(.CSV only)</label><br>
-                                                    </div>
+                                                    </div> -->
+                                                    <div class="col col-md-3"></div>
                                                    <?php
                                                         $sql="select * from student_table2 where std_id='$feedid')";
                                                         $result = mysqli_query($con,$sql);

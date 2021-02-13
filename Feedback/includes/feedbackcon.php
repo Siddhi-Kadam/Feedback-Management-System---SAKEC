@@ -19,6 +19,7 @@ $pg2 = "EXTC";
 $pg3 = "ETRX";
 //Fetch year to connect to First year feedback database
 $yr = "FIRST";
+/*
 // Connect to First year database
 if($year==$yr  || $progstaff=='FE'){
 	define ("DB","feedbackfe"); 
@@ -27,11 +28,13 @@ if($year==$yr  || $progstaff=='FE'){
 	//echo"connection established with $progstud";
 	if(mysqli_connect_errno()){
 		echo "Connection Fail".mysqli_connect_error();}}
+*/		
 if($progstud==$pg1 || $progstaff==$pg1 && $year!=$yr){
 	$feeddbc=mysqli_connect("localhost", "root", "","feedbackcomputer");
 	$atl=1;
 	if(mysqli_connect_errno()){
 		echo "Connection Fail".mysqli_connect_error();}}
+/*
 if($progstud==$pg2 || $progstaff==$pg2 && $year!=$yr){
 	define ("DB","feedbackcextc"); 
 	$feeddbc=mysqli_connect("localhost", "root", "",DB);
@@ -45,3 +48,4 @@ if($progstud==$pg3 || $progstaff==$pg3 && $year!=$yr){
 	if(mysqli_connect_errno()){
 		echo "Connection Fail".mysqli_connect_error();}}
   ?>
+*/  
