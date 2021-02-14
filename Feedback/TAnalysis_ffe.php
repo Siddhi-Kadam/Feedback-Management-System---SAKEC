@@ -46,7 +46,7 @@ td{
 </head>
 <body><center>
 
-<iframe height="560px" width="100%" src="TAnalysis1_ffe.php" name="iframe_a"></iframe>
+<iframe height="780px" width="100%" src="TAnalysis1_ffe.php" name="iframe_a"></iframe>
 </center>
 <table style="margin-left:600px">
   <td><p style="text-align: center;"><button  class="btn btn-primary btn-sm"><a href="/Feedback/TAnalysis1_ffe.php" download="graph">Download</a></button>

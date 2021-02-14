@@ -41,7 +41,7 @@ if(isset($_POST['login'])){
     {
         $loginuser=$_POST['username'];
 		$password=md5($_POST['password']);
-		$query=mysqli_query($con,"select id from users where user_name='$loginuser' AND user_level<=5");// && pwd='$password'
+		$query=mysqli_query($con,"select id from users where user_name='$loginuser' && pwd='$password' AND user_level<=5");// && pwd='$password'
         $ret=mysqli_fetch_array($query);
         if($ret>0){
             $_SESSION['feedid']=$ret['id'];

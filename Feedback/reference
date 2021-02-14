@@ -1,3 +1,6 @@
+TAnalysis1.php
+
+
 <!-- Questionwise Graph of Theory FF Graph -->
 <?php
 session_start();
@@ -126,7 +129,7 @@ while($row1 = mysqli_fetch_array($r1)) {
         }],
         "dataset": [
         {
-            "seriesname": "Counts as per options selected by students",
+            "seriesname": "4",
             "data": [
             <?php
                 for($i=1;$i<10;$i++){

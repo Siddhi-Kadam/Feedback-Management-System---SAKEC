@@ -83,7 +83,7 @@ else{
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <strong>Edit Course Exit Form</strong>
+                                        <strong>Edit Lab Exit Form</strong>
                                     </div>
                                     <div class="card-body card-block">
                                     <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">

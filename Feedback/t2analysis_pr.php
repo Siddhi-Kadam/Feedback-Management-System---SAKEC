@@ -49,7 +49,7 @@ td{
 </head>
 <body><center>
 
-<iframe height="560px" width="100%" src="t2analysis1_pr.php" name="iframe_a"></iframe>
+<iframe height="750px" width="100%" src="t2analysis1_pr.php" name="iframe_a"></iframe>
 </center>
 <table style="margin-left:600px">
   <td><p style="text-align: center;"><button  class="btn btn-primary btn-sm"><a href="/Feedback/t2analysis1_pr.php" download="graph">Download</a></button>

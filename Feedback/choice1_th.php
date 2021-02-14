@@ -14,7 +14,7 @@ if($_GET){
     $_SESSION['staffc']=$stc;
 }
 if(isset($_POST['ques'])){
-    header("Location: T1.php?code=$stc");
+    header("Location: TAnalysis1.php?code=$stc");
 }
 else if(isset($_POST['choice'])){
     header("Location: tt1.php?code=$stc");

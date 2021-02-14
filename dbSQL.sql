@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 13, 2021 at 08:42 PM
+-- Generation Time: Feb 14, 2021 at 02:47 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -111,7 +111,20 @@ INSERT INTO `cequestions` (`subject_no`, `semester`, `question_no`, `question`) 
 ('CSC601', '7', '7', 'Is the discipline of the class maintained?'),
 ('CSC601', '7', '8', 'How is the presentation of the teacher with different teaching aids?'),
 ('CSC601', '7', '9', 'Does the teacher recommends additional learning resources?'),
-('CSC601', '7', '10', 'Does the teacher supports in clearing doubts and provides assistance/help?');
+('CSC601', '7', '10', 'Does the teacher supports in clearing doubts and provides assistance/help?'),
+('Questionno', 'question', '', ''),
+('1', 'Your abi', '', ''),
+('2', 'Your abi', '', ''),
+('3', 'Your abi', '', ''),
+('4', 'Your abi', '', ''),
+('5', 'Your abi', '', ''),
+('6', 'Your abi', '', ''),
+('7', 'Your abi', '', ''),
+('8', 'Your abi', '', ''),
+('9', 'Your und', '', ''),
+('10', 'Your abi', '', ''),
+('11', 'Your abi', '', ''),
+('12', 'Your abi', '', '');
 
 -- --------------------------------------------------------
 
@@ -319,7 +332,20 @@ INSERT INTO `lequestions` (`lab_no`, `semester`, `question_no`, `question`) VALU
 ('CSL601', '7', '7', 'Is the discipline of the class maintained?'),
 ('CSL601', '7', '8', 'How is the presentation of the teacher with different teaching aids?'),
 ('CSL601', '7', '9', 'Does the teacher recommends additional learning resources?'),
-('CSL601', '7', '10', 'Does the teacher supports in clearing doubts and provides assistance/help?');
+('CSL601', '7', '10', 'Does the teacher supports in clearing doubts and provides assistance/help?'),
+('Questionno', 'question', '', ''),
+('1', 'Your abi', '', ''),
+('2', 'Your abi', '', ''),
+('3', 'Your abi', '', ''),
+('4', 'Your abi', '', ''),
+('5', 'Your abi', '', ''),
+('6', 'Your abi', '', ''),
+('7', 'Your abi', '', ''),
+('8', 'Your abi', '', ''),
+('9', 'Your und', '', ''),
+('10', 'Your abi', '', ''),
+('11', 'Your abi', '', ''),
+('12', 'Your abi', '', '');
 
 -- --------------------------------------------------------
 
@@ -410,7 +436,17 @@ INSERT INTO `pfeedback` (`std_id`, `division`, `batch`, `teacher_id`, `subject_n
 (343, 'TE3', 'A', 'N339', 'CSL604', 3, 3, 3, 3, 3, '2/2021'),
 (343, 'TE3', 'A', 'N735', 'CSL603', 3, 3, 3, 3, 3, '2/2021'),
 (343, 'TE3', 'A', 'n592', 'CSL602', 3, 3, 3, 3, 3, '2/2021'),
-(343, 'TE3', 'A', 'N458', 'CSP605', 3, 3, 3, 3, 3, '2/2021');
+(343, 'TE3', 'A', 'N458', 'CSP605', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N459', 'CSL601', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N300', 'CSL604', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N665', 'CSL603', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N525', 'CSL602', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N387', 'CSP605', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N459', 'CSL601', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N300', 'CSL604', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N665', 'CSL603', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N525', 'CSL602', 3, 3, 3, 3, 3, '2/2021'),
+(421, 'TE4', 'A', 'N387', 'CSP605', 3, 3, 3, 3, 3, '2/2021');
 
 -- --------------------------------------------------------
 
@@ -493,7 +529,27 @@ INSERT INTO `tfeedback` (`std_id`, `division`, `teacher_id`, `subject_no`, `Q1`,
 (343, 'TE3', 'N233', 'CSC604', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
 (343, 'TE3', 'N339', 'CSC604', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
 (343, 'TE3', 'N146', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
-(343, 'TE3', 'N311', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021');
+(343, 'TE3', 'N311', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N-605', 'CSC601', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N432', 'CSC601', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N525', 'CSC602', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'n592', 'CSC602', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N395', 'CSC603', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N665', 'CSC603', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N233', 'CSC604', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N300', 'CSC604', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N146', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N616', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N-605', 'CSC601', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N432', 'CSC601', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N525', 'CSC602', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'n592', 'CSC602', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N395', 'CSC603', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N665', 'CSC603', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N233', 'CSC604', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N300', 'CSC604', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N146', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021'),
+(421, 'TE4', 'N616', 'CSDLO6021', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 6, '2/2021');
 
 -- --------------------------------------------------------
 
@@ -1881,7 +1937,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `full_name`, `user_name`, `user_email`, `user_level`, `pwd`, `program`) VALUES
 (1, 'Radhika Fulzele', 'N674', 'radhika.fulzele@sakec.ac.in', 1, '3d765a983549ea9f5a41df7d9fffb9855119e74ee89e63581', 'Computer'),
 (2, 'SHASHIKANT S RADKE', 'N323', 'shashikant.radke@sakec.ac.in', 1, '9123a46accc1891b4e770a4d06f47b5e6bd532d1a3177fcd7', 'Computer'),
-(3, 'Pinki Vishwakarma', 'N395', 'pinki.vishwakarma@sakec.ac.in', 1, '555db7e20c3682b0de9fd5f31d79b4919dc95e169fa35edd1', 'Computer'),
+(3, 'Pinki Vishwakarma', 'N395', 'pinki.vishwakarma@sakec.ac.in', 1, 'f0e84041297fae34080e61b840d26ebe', 'Computer'),
 (4, 'DEEPSHIKHA A CHATURVEDI', 'N411', 'deepshikha.chaturvedi@sakec.ac.in', 1, 'd4cb7137ad9d798ab62b9f8ec1d3ae3f7a0217864169efa45', 'Computer'),
 (5, 'KARUNA J BORHADE', 'N458', 'karuna.borhade@sakec.ac.in', 1, '90f066f6b8ee51b300fbdeefefc3dc80c93bce072760220c4', 'Computer'),
 (6, 'Pradip S. Mane', 'N677', 'pradip.mane@sakec.ac.in', 2, '58111f05385aa19f16e27b46d458e27e197b5626b6c293911', 'Computer'),
@@ -1892,7 +1948,7 @@ INSERT INTO `users` (`id`, `full_name`, `user_name`, `user_email`, `user_level`,
 (11, 'Deepti Deepak Nikumbh', 'N616', 'deepti.nikumbh@sakec.ac.in', 1, '890ee5d4ae8be8d274cfbf45a745a640956514b112da2a988', 'Computer'),
 (12, 'Jaya Zalte', 'N555', 'jaya.zalte@sakec.ac.in', 1, 'a356c5c72756869b45b90b086a62da1287393947e13b79e7c', 'Computer'),
 (13, 'Priyanka Lohot', 'N628', 'priyanka.lohot@sakec.ac.in', 1, '9ccdfae2a10a87e8af407ee272db9aa8dbc8f750876ee7386', 'Computer'),
-(14, 'Tina Maru', 'N432', 'tina.maru@sakec.ac.in', 1, 'a9d05499ba97dd5b2d921bc1fccc5685174c549abcd2b242f', 'Computer'),
+(14, 'Tina Maru', 'N432', 'tina.maru@sakec.ac.in', 1, 'f0e84041297fae34080e61b840d26ebe', 'Computer'),
 (15, 'Krupa Gaurav Chotai', 'N525', 'krupa.chotai@sakec.ac.in', 2, 'd146465ecc024a8b7a0904946fc4887e02d7cd6129e9bfcc5', 'Computer'),
 (16, 'Prakash Parmar', 'N625', 'prakash.parmar@sakec.ac.in', 1, 'd4cb7137ad9d798ab62b9f8ec1d3ae3f7a0217864169efa45', 'Computer'),
 (17, 'MILIND SUDHIR KHAIRNAR', 'N325', 'milind.khairnar@sakec.ac.in', 1, 'd4cb7137ad9d798ab62b9f8ec1d3ae3f7a0217864169efa45', 'Computer'),
@@ -1991,7 +2047,7 @@ ALTER TABLE `lab_table`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 --
 -- Database: `phpmyadmin`
 --
@@ -2080,7 +2136,8 @@ CREATE TABLE `pma__export_templates` (
 INSERT INTO `pma__export_templates` (`id`, `username`, `export_type`, `template_name`, `template_data`) VALUES
 (1, 'root', 'server', 'abc', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"db_select[]\":[\"feedbackcomputer\",\"feedbackdb\",\"phpmyadmin\",\"test\"],\"aliases_new\":\"\",\"output_format\":\"sendit\",\"filename_template\":\"@SERVER@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"json_structure_or_data\":\"data\",\"json_unicode\":\"something\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"yaml_structure_or_data\":\"data\",\"\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"json_pretty_print\":null,\"htmlword_columns\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_drop_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_view_current_user\":null,\"sql_or_replace_view\":null,\"sql_procedure_function\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}'),
 (2, 'root', 'server', '123', '{\"quick_or_custom\":\"quick\",\"what\":\"excel\",\"db_select[]\":[\"feedbackcomputer\",\"feedbackdb\",\"phpmyadmin\",\"test\"],\"aliases_new\":\"\",\"output_format\":\"sendit\",\"filename_template\":\"@SERVER@\",\"remember_template\":\"on\",\"charset\":\"windows-1252\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"json_structure_or_data\":\"data\",\"json_unicode\":\"something\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"yaml_structure_or_data\":\"data\",\"\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"json_pretty_print\":null,\"htmlword_columns\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_drop_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_view_current_user\":null,\"sql_or_replace_view\":null,\"sql_procedure_function\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}'),
-(3, 'root', 'server', 'sid', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"db_select[]\":[\"feedbackcomputer\",\"feedbackdb\",\"phpmyadmin\",\"test\"],\"aliases_new\":\"\",\"output_format\":\"sendit\",\"filename_template\":\"@SERVER@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"json_structure_or_data\":\"data\",\"json_unicode\":\"something\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"yaml_structure_or_data\":\"data\",\"\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"json_pretty_print\":null,\"htmlword_columns\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_drop_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_view_current_user\":null,\"sql_or_replace_view\":null,\"sql_procedure_function\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}');
+(3, 'root', 'server', 'sid', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"db_select[]\":[\"feedbackcomputer\",\"feedbackdb\",\"phpmyadmin\",\"test\"],\"aliases_new\":\"\",\"output_format\":\"sendit\",\"filename_template\":\"@SERVER@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"json_structure_or_data\":\"data\",\"json_unicode\":\"something\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"yaml_structure_or_data\":\"data\",\"\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"json_pretty_print\":null,\"htmlword_columns\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_drop_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_view_current_user\":null,\"sql_or_replace_view\":null,\"sql_procedure_function\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}'),
+(4, 'root', 'server', 'a', '{\"quick_or_custom\":\"quick\",\"what\":\"sql\",\"db_select[]\":[\"feedbackcomputer\",\"feedbackdb\",\"phpmyadmin\",\"test\"],\"aliases_new\":\"\",\"output_format\":\"sendit\",\"filename_template\":\"@SERVER@\",\"remember_template\":\"on\",\"charset\":\"utf-8\",\"compression\":\"none\",\"maxsize\":\"\",\"codegen_structure_or_data\":\"data\",\"codegen_format\":\"0\",\"csv_separator\":\",\",\"csv_enclosed\":\"\\\"\",\"csv_escaped\":\"\\\"\",\"csv_terminated\":\"AUTO\",\"csv_null\":\"NULL\",\"csv_structure_or_data\":\"data\",\"excel_null\":\"NULL\",\"excel_columns\":\"something\",\"excel_edition\":\"win\",\"excel_structure_or_data\":\"data\",\"json_structure_or_data\":\"data\",\"json_unicode\":\"something\",\"latex_caption\":\"something\",\"latex_structure_or_data\":\"structure_and_data\",\"latex_structure_caption\":\"Structure of table @TABLE@\",\"latex_structure_continued_caption\":\"Structure of table @TABLE@ (continued)\",\"latex_structure_label\":\"tab:@TABLE@-structure\",\"latex_relation\":\"something\",\"latex_comments\":\"something\",\"latex_mime\":\"something\",\"latex_columns\":\"something\",\"latex_data_caption\":\"Content of table @TABLE@\",\"latex_data_continued_caption\":\"Content of table @TABLE@ (continued)\",\"latex_data_label\":\"tab:@TABLE@-data\",\"latex_null\":\"\\\\textit{NULL}\",\"mediawiki_structure_or_data\":\"data\",\"mediawiki_caption\":\"something\",\"mediawiki_headers\":\"something\",\"htmlword_structure_or_data\":\"structure_and_data\",\"htmlword_null\":\"NULL\",\"ods_null\":\"NULL\",\"ods_structure_or_data\":\"data\",\"odt_structure_or_data\":\"structure_and_data\",\"odt_relation\":\"something\",\"odt_comments\":\"something\",\"odt_mime\":\"something\",\"odt_columns\":\"something\",\"odt_null\":\"NULL\",\"pdf_report_title\":\"\",\"pdf_structure_or_data\":\"data\",\"phparray_structure_or_data\":\"data\",\"sql_include_comments\":\"something\",\"sql_header_comment\":\"\",\"sql_use_transaction\":\"something\",\"sql_compatibility\":\"NONE\",\"sql_structure_or_data\":\"structure_and_data\",\"sql_create_table\":\"something\",\"sql_auto_increment\":\"something\",\"sql_create_view\":\"something\",\"sql_create_trigger\":\"something\",\"sql_backquotes\":\"something\",\"sql_type\":\"INSERT\",\"sql_insert_syntax\":\"both\",\"sql_max_query_size\":\"50000\",\"sql_hex_for_binary\":\"something\",\"sql_utc_time\":\"something\",\"texytext_structure_or_data\":\"structure_and_data\",\"texytext_null\":\"NULL\",\"yaml_structure_or_data\":\"data\",\"\":null,\"as_separate_files\":null,\"csv_removeCRLF\":null,\"csv_columns\":null,\"excel_removeCRLF\":null,\"json_pretty_print\":null,\"htmlword_columns\":null,\"ods_columns\":null,\"sql_dates\":null,\"sql_relation\":null,\"sql_mime\":null,\"sql_disable_fk\":null,\"sql_views_as_tables\":null,\"sql_metadata\":null,\"sql_drop_database\":null,\"sql_drop_table\":null,\"sql_if_not_exists\":null,\"sql_view_current_user\":null,\"sql_or_replace_view\":null,\"sql_procedure_function\":null,\"sql_truncate\":null,\"sql_delayed\":null,\"sql_ignore\":null,\"texytext_columns\":null}');
 
 -- --------------------------------------------------------
 
@@ -2150,7 +2207,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"feedbackdb\",\"table\":\"users\"},{\"db\":\"feedbackcomputer\",\"table\":\"pfeedback\"},{\"db\":\"feedbackcomputer\",\"table\":\"tfeedback\"},{\"db\":\"feedbackdb\",\"table\":\"student_table2\"},{\"db\":\"feedbackcomputer\",\"table\":\"lequestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"cequestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"coaquestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"ecaquestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"facilityquestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"alquestions\"}]');
+('root', '[{\"db\":\"feedbackdb\",\"table\":\"lab_table\"},{\"db\":\"feedbackdb\",\"table\":\"subject_table\"},{\"db\":\"feedbackdb\",\"table\":\"users\"},{\"db\":\"feedbackdb\",\"table\":\"student_table2\"},{\"db\":\"feedbackcomputer\",\"table\":\"pfeedback\"},{\"db\":\"feedbackcomputer\",\"table\":\"tfeedback\"},{\"db\":\"feedbackcomputer\",\"table\":\"lequestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"cequestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"coaquestions\"},{\"db\":\"feedbackcomputer\",\"table\":\"ecaquestions\"}]');
 
 -- --------------------------------------------------------
 
@@ -2264,7 +2321,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2021-02-13 19:40:41', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2021-02-14 13:46:53', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
@@ -2433,7 +2490,7 @@ ALTER TABLE `pma__column_info`
 -- AUTO_INCREMENT for table `pma__export_templates`
 --
 ALTER TABLE `pma__export_templates`
-  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `pma__history`

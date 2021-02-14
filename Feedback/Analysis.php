@@ -36,11 +36,25 @@ else{
         $resq=mysqli_query($con, $asd);
         $q = mysqli_fetch_array($resq);
         $ch=$q["user_name"];
-        $de1=$q["program"];
+        // $de1=$q["program"];
+        // $sq1="select program from users where id='$feedid'";
+        // $re1=mysqli_query($con, $sq1);
+        // $r2 = mysqli_fetch_array($re1);
+        // $de=$r2["program"];
+        // if($de==$de1){
+        //     header("Location: choice_pr.php?code=$ch");
+        // }
+        // else{
+        //     $msg="You donot have access to details of $de1";
+        // }
         $sq1="select program from users where id='$feedid'";
         $re1=mysqli_query($con, $sq1);
         $r2 = mysqli_fetch_array($re1);
         $de=$r2["program"];
+        $sq2="select program from users where user_name='$ch'";
+        $re1=mysqli_query($con, $sq2);
+        $r3 = mysqli_fetch_array($re1);
+        $de1=$r3["program"];
         if($de==$de1){
             header("Location: choice_pr.php?code=$ch");
         }
