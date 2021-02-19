@@ -10,6 +10,7 @@
                         <li><a href="SECEF.php" style="color: blue">Course Exit Form</a></li>
                         <li><a href="SELEF.php" style="color: blue">LAB Exit Form</a></li>
                         <li><a href="staff_analysis.php" style="color: blue">Analysis</a></li>
+                        <li><a href="yr_subject.php" style="color: blue">Years Comparison</a></li>
                     </ul>
                 </nav>
             </div>

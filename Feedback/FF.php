@@ -10,6 +10,7 @@ if (strlen($_SESSION['feedid']==0))
 } 
 else
 {
+    
     if(isset($_POST['Submit'])){
         header("Location: FF2.php");
     }
