@@ -4,8 +4,9 @@ error_reporting(0);
 include('includes/dbconnection.php');
 include('includes/feedbackcon.php');
 $feedid=$_SESSION['feedid'];
+$tcode=$_SESSION['tcode'];
 error_reporting(0);
-if (strlen($_SESSION['feedid']==0)) {
+if (strlen($_SESSION['feedid']==0) && strlen($_SESSION['tcode']==0)) {
   header('location:logout.php');
   } 
 else{
@@ -15,10 +16,9 @@ else{
         $resq=mysqli_query($con1, $asd);
         $q = mysqli_fetch_array($resq);
         $ch=$q["subject_no"];
-        header("Location: choice_ce.php?code=$ch");
+        header("Location: yr_year_selection.php?code=$ch");
     }
 ?>
-<!DOCTYPE html>
 <html lang="en">
     <head>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -120,7 +120,7 @@ $(document).ready(function(){
     <body class="animsition">
         <div class="page-wrapper">
             <!-- HEADER MOBILE-->
-            <?php include_once('includes/ssidebar.php');?>      
+            <?php include_once('includes/asidebar.php');?>
             <div class="page-container">
                 <!-- HEADER DESKTOP-->
                 <?php include_once('includes/sheader.php');?>

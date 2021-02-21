@@ -6,21 +6,20 @@ include('includes/feedbackcon.php');
 $feedid=$_SESSION['feedid'];
 error_reporting(0);
 if (strlen($_SESSION['feedid']==0)) {
-  header('location:logout.php');
-  } 
+    header('location:logout.php');
+}
 else{
-if($_GET){
-    $stc=$_GET['code'];
-    $_SESSION['staffc']=$stc;
-}
-if(isset($_POST['ques'])){
-    header("Location: TAnalysis_ce.php?code=$stc");
-}
-else if(isset($_POST['choice'])){
-    header("Location: t2analysis_ce.php?code=$stc");
-}
-    ?>
-<!DOCTYPE html>
+    if($_GET){
+        $stc=$_GET['code'];
+        $_SESSION['staffc']=$stc;
+    }
+    if(isset($_POST['ques'])){
+        header("Location: TAnalysis_ce.php?code=$stc");
+    }
+    else if(isset($_POST['choice'])){
+        header("Location: t2analysis_ce.php?code=$stc");
+    }
+?>
 <html lang="en">
     <head>
         <!-- Required meta tags-->

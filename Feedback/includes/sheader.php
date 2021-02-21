@@ -6,9 +6,10 @@
                 <div class="header-button">
                     <?php
                         $adminid=$_SESSION['feedid'];
-                        $rethead=mysqli_query($con,"select full_name from users where id='$adminid'");
+                        $rethead=mysqli_query($con,"select full_name, user_name from users where id='$adminid'");
                         $rowhead=mysqli_fetch_array($rethead);
-                        $name=$rowhead['full_name'];?>                                       
+                        $name=$rowhead['full_name'];
+                        $username=$rowhead['user_name'];?>
                     <div class="account-wrap">
                         <div class="account-item clearfix js-item-menu">
                             <div class="content">

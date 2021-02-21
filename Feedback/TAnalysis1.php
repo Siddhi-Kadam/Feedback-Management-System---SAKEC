@@ -27,11 +27,14 @@ $di=$row1[0];
 $q1= "select * from users where user_name='$stc'";
 $r1=mysqli_query($con, $q1);
 
-if (mysqli_num_rows($r1) > 0) {
-while($row1 = mysqli_fetch_array($r1)) {
+if (mysqli_num_rows($r1) > 0)
+{
+while($row1 = mysqli_fetch_array($r1))
+{
     $query = "select * FROM tfeedback where teacher_id='$stc' AND division='$di' group by division,subject_no";
     $result = mysqli_query($feeddbc, $query);
-    while($row = mysqli_fetch_array($result))  { 
+    while($row = mysqli_fetch_array($result))
+    {
         $sn=$row['subject_no'];
         $qu11 = "select * FROM subject_table where subject_no='$sn'";
         $res11 = mysqli_query($con1, $qu11);

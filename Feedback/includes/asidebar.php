@@ -32,6 +32,7 @@ else{
                 }?>
                 <li><a href='databutton.php' style="color: blue">Database insertions</a></li>
                 <li><a href="anbutton.php" style="color: blue">Analysis</a></li>
+                <li><a href="yr_staff.php" style="color: blue">Years Comparison</a></li>
                 <li><a href="anreport.php" style="color: blue">Classwise Report</a></li>
             </ul>
         </nav>
